@@ -1,28 +1,83 @@
 {
   "version": "2.0",
-  "dataset_id": "on006647",
-  "source": "openneuro",
-  "source_id": "ds006647",
+  "pipeline_stage": "validated",
   "title": "Poetry Assessment EEG Dataset 2",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Soma Chaudhuri": {},
     "Joydeep Bhattacharya": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006647.v1.0.1",
       "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on006647",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on006647",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.8.0",
-  "recording_modality": [
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "4.6 GB (70 files)"
+  ],
+  "formats": [
+    ".csv",
+    ".json",
+    ".loc",
+    ".m",
+    ".md",
+    ".pdf",
+    ".set",
+    ".tsv",
+    ".txt",
+    ".xlsx",
+    ".yml"
+  ],
+  "description": "This dataset comprises 64-channel EEG recordings and behavioral ratings from 4 participants (P105, P141, P142, P146) who evaluated 210 short English-language texts (70 Haiku, 70 Senryu, and 70 control texts) on five subjective dimensions: Aesthetic Appeal, Vivid Imagery, Being Moved, Originality, and Creativity. Poetry Assessment EEG Dataset 2 is a subset of a larger 51-participant study; these 4 participants were excluded from primary analyses because their EEG recordings were acquired in segments due to session interruptions and subsequently concatenated during preprocessing. The dataset includes resting-state EEG, trial-by-trial behavioral ratings, and psychometric responses (PANAS, Openness, Curiosity, VVIQ, AVIQ, MAAS, AReA), and is provided for completeness and transparency to enable users to apply their own quality control pipelines.",
+  "methods_description": "EEG data were recorded using a 64-channel system at the Department of Psychology, Goldsmiths, University of London. Continuous EEG recordings were acquired during the reading and evaluation of 210 texts presented across seven blocks. A key distinguishing feature of this dataset is that recordings for these 4 participants were acquired in segments due to session interruptions and subsequently concatenated during preprocessing. Resting-state EEG was recorded at the beginning and end of each session. Behavioral ratings were collected on a 7-point scale for each text across five dimensions. Psychometric assessments included PANAS (mood), Openness, Curiosity, VVIQ (visual imagery), AVIQ (auditory imagery), MAAS (mindfulness), and AReA (aesthetic responsiveness). EEG data were preprocessed using MATLAB and formatted according to BIDS standards. These participants were excluded from primary power spectral density analyses to avoid potential artifacts from concatenation but are included here for completeness.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "aesthetic cognition"
+    },
+    {
+      "term": "creative cognition"
+    },
+    {
+      "term": "poetry"
+    },
+    {
+      "term": "Haiku"
+    },
+    {
+      "term": "Senryu"
+    },
+    {
+      "term": "resting-state EEG"
+    },
+    {
+      "term": "behavioral ratings"
+    },
+    {
+      "term": "psychometric assessment"
+    },
+    {
+      "term": "EEG preprocessing"
+    }
+  ],
+  "source_hash": "acda732b0460bf5a09ea7ac7a3373ed4320217924d8a16c762c7cfcef430c8ff"
 }
