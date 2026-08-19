@@ -2,12 +2,39 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Poetry Assessment EEG Dataset 2",
+  "description": "This dataset contains 64-channel EEG recordings and behavioural ratings from 4 participants who read and evaluated English-language poetic and non-poetic texts (Haiku, Senryu, and Control). It is a supplementary companion to Poetry Assessment EEG Dataset 1, including participants whose EEG data were acquired in segmented sessions and later concatenated, excluded from primary PSD analyses but retained for completeness. The study investigates neural and psychological correlates of aesthetic appreciation, emotional response, and creativity judgments in response to poetic language.",
+  "methods_description": "EEG was recorded using a 64-channel BioSemi system while participants read and rated 210 short texts (70 Haiku, 70 Senryu, 70 Control) on five dimensions: Aesthetic Appeal, Vivid Imagery, Being Moved, Originality, and Creativity, using a 7-point scale. Resting-state EEG was recorded before and after the experiment. Data for four participants with interrupted recording sessions were concatenated during preprocessing using MATLAB scripts and BIDS-compliant tools.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
     "Soma Chaudhuri": {},
     "Joydeep Bhattacharya": {}
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Aesthetics"
+    },
+    {
+      "term": "Creativity",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D003405"
+    },
+    {
+      "term": "poetry"
+    },
+    {
+      "term": "emotion"
+    },
+    {
+      "term": "resting-state EEG"
+    },
+    {
+      "term": "psycholinguistics"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006647.v1.0.1",
@@ -25,10 +52,10 @@
       "relation_type": "IsDescribedBy"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "4.6 GB (70 files)"
   ],
@@ -44,43 +71,6 @@
     ".txt",
     ".xlsx",
     ".yml"
-  ],
-  "description": "This dataset comprises 64-channel EEG recordings and behavioral ratings from 4 participants (P105, P141, P142, P146; anonymized as sub-001 to sub-004 in BIDS format) who evaluated 210 short English-language texts (70 Haiku, 70 Senryu, and 70 control texts) on five subjective dimensions: Aesthetic Appeal, Vivid Imagery, Being Moved, Originality, and Creativity. IMPORTANT: These 4 participants were EXCLUDED from primary analyses due to segmented EEG recordings acquired in multiple sessions and subsequently concatenated during preprocessing, which introduced potential artifacts. This is a companion dataset to Poetry Assessment EEG Dataset 1 (47 participants with validated continuous recordings used in primary analyses). Poetry Assessment EEG Dataset 2 is included for completeness and transparency, enabling users to apply their own quality control pipelines if desired. The dataset includes resting-state EEG (trigger codes: 65285, 65286 for pre-experiment; 65287, 65288 for post-experiment), trial-by-trial behavioral ratings, and psychometric responses (PANAS, Openness, Curiosity, VVIQ, AVIQ, MAAS, AReA), enabling investigation of neural correlates of aesthetic and creative cognition during poetic language processing. All preprocessing steps, event markers, and metadata structures were applied identically across both Poetry Assessment EEG datasets.",
-  "methods_description": "EEG was recorded using a 64-channel BioSemi system during a poetry assessment task in which participants read and rated 210 texts across seven blocks. Resting-state EEG was acquired at the beginning (trigger codes 65285, 65286) and end (trigger codes 65287, 65288) of each session. For the 4 participants in this dataset, EEG recordings were acquired in segments due to session interruptions and subsequently concatenated during preprocessing. Behavioral ratings were collected on a 7-point scale for five subjective dimensions: Aesthetic Appeal, Vivid Imagery, Being Moved, Originality, and Creativity. Psychometric assessments included mood (PANAS), personality traits (Openness, Curiosity), imagery ability (VVIQ, AVIQ), mindfulness (MAAS), and aesthetic responsiveness (AReA). Data collection occurred at the Department of Psychology, Goldsmiths University of London, UK, with ethics approval from the Local Ethics Committee. All data were anonymized with participant identifiers coded as P105, P141, P142, and P146, mapped to BIDS IDs sub-001 through sub-004 respectively.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "aesthetic cognition"
-    },
-    {
-      "term": "poetry"
-    },
-    {
-      "term": "creative language processing"
-    },
-    {
-      "term": "behavioral ratings"
-    },
-    {
-      "term": "resting-state EEG"
-    },
-    {
-      "term": "psychometric assessment"
-    },
-    {
-      "term": "haiku"
-    },
-    {
-      "term": "senryu"
-    },
-    {
-      "term": "segmented EEG"
-    },
-    {
-      "term": "concatenated EEG"
-    }
   ],
   "source_hash": "acda732b0460bf5a09ea7ac7a3373ed4320217924d8a16c762c7cfcef430c8ff"
 }
